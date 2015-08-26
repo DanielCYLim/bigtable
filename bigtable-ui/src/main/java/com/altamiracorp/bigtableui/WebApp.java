@@ -1,7 +1,7 @@
 package com.altamiracorp.bigtableui;
 
-import com.altamiracorp.miniweb.App;
-import com.altamiracorp.miniweb.Handler;
+import io.lumify.miniweb.App;
+import io.lumify.miniweb.Handler;
 import com.google.inject.Injector;
 
 import javax.servlet.ServletConfig;
@@ -11,7 +11,7 @@ public class WebApp extends App {
     private final Injector injector;
 
     public WebApp(final ServletConfig servletConfig, final Injector injector) {
-        super(servletConfig);
+        super(servletConfig.getServletContext());
 
         this.injector = injector;
         Enumeration initParamNames = servletConfig.getInitParameterNames();

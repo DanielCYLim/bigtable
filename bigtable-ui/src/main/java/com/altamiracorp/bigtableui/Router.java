@@ -2,7 +2,7 @@ package com.altamiracorp.bigtableui;
 
 import com.altamiracorp.bigtableui.routes.Query;
 import com.altamiracorp.bigtableui.routes.TableGet;
-import com.altamiracorp.miniweb.StaticFileHandler;
+import io.lumify.miniweb.handlers.StaticFileHandler;
 import com.google.inject.Injector;
 
 import javax.servlet.ServletConfig;
@@ -24,7 +24,7 @@ public class Router extends HttpServlet {
         final Injector injector = (Injector) config.getServletContext().getAttribute(Injector.class.getName());
 
         app = new WebApp(config, injector);
-        app.get("/", new StaticFileHandler(config, "/index.html"));
+        app.get("/", new StaticFileHandler(config.getServletContext(), "/index.html"));
 
         app.get("/table", TableGet.class);
         app.get("/table/{tableName}", Query.class);

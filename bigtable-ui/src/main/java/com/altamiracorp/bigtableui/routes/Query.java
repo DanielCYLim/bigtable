@@ -18,7 +18,7 @@ import com.altamiracorp.bigtable.model.user.ModelUserContext;
 import com.altamiracorp.bigtableui.BigTableRepository;
 import com.altamiracorp.bigtableui.util.DisplayFormatUtils;
 import com.altamiracorp.bigtableui.util.StringEscapeUtils;
-import com.altamiracorp.miniweb.HandlerChain;
+import io.lumify.miniweb.HandlerChain;
 import com.google.common.primitives.Doubles;
 import com.google.common.primitives.Ints;
 import com.google.common.primitives.Longs;

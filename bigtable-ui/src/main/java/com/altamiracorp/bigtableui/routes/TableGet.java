@@ -4,7 +4,7 @@ import com.altamiracorp.bigtable.model.user.ModelUserContext;
 import com.altamiracorp.bigtable.model.user.accumulo.AccumuloUserContext;
 import com.altamiracorp.bigtableui.BigTableRepository;
 import com.altamiracorp.bigtableui.model.Table;
-import com.altamiracorp.miniweb.HandlerChain;
+import io.lumify.miniweb.HandlerChain;
 import com.google.inject.Inject;
 import org.apache.accumulo.core.security.Authorizations;
 import org.json.JSONArray;
