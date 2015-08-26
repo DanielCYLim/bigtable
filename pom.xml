@@ -13,6 +13,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.build.timestamp.format>EEE MMM dd HH:mm z yyyy</maven.build.timestamp.format>
         
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>
+	
         <cobertura.plugin.version>2.6</cobertura.plugin.version>
         <javadoc.plugin.version>2.9.1</javadoc.plugin.version>
         <source.plugin.version>2.2.1</source.plugin.version>
@@ -25,11 +28,23 @@
     </properties>
 
     <scm>
-        <url>https://github.com/altamiracorp/bigtable-ui</url>
-        <connection>scm:git:git://github.com/altamiracorp/bigtable-ui.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/altamiracorp/bigtable-ui.git</developerConnection>
+        <url>https://github.com/DanielCYLim//bigtable-ui</url>
+        <connection>scm:git:git://github.com/DanielCYLim//bigtable-ui.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/DanielCYLim//bigtable-ui.git</developerConnection>
     </scm>
 
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://sa-seeker-1:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://sa-seeker-1:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+<!--
     <distributionManagement>
         <repository>
             <id>bits.lumify.io.releases</id>
@@ -40,7 +55,9 @@
             <url>file:///var/www/maven/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+-->
 
+<!--
     <repositories>
         <repository>
             <id>ext-releases</id>
@@ -59,6 +76,7 @@
             <url>https://repository.cloudera.com/content/repositories/releases/</url>
         </repository>
     </repositories>
+-->
 
     <dependencyManagement>
         <dependencies>

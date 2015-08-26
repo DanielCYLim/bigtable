@@ -12,9 +12,12 @@
 
     <name>BigTable: Accumulo</name>
 
-    <properties>
+    <properties>    
         <accumulo-version>1.6.1</accumulo-version>
         <hadoop-version>2.3.0</hadoop-version>
+	
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>	
     </properties>
 
     <dependencies>

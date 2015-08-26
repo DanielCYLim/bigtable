@@ -14,6 +14,9 @@
     <name>BigTable: UI WAR</name>
 
     <properties>
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>
+	
         <jetty-version>8.1.14.v20131031</jetty-version>
         <plugin.buildnumber.version>1.2</plugin.buildnumber.version>
         <plugin.maven.war.version>2.3</plugin.maven.war.version>
